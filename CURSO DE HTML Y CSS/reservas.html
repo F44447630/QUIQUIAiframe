@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiquia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="estilos.css" rel="stylesheet">
+  </head>
+<body>
+    <header data-bs-theme="dark">
+            <nav class="navbar navbar-expand-md navbar-light navbar-transparent  fixed-top bg-dark">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="index.html" ><img class="Quiquia" src="QUIQUIA.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="
+                            --bs-navbar-toggler-icon-bg: url(
+                            &quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 029' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e&quot;);
+                    "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a id="home-link" class="nav-link " aria-current="page" href="catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Reserva</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+    </header>
+    <div class="mt-5"></div>        
+    <main class="mt-6">
+        <div class="container-fluid">
+            <div class="row mt-5 mb-5">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <h2>Día y horario</h2>
+                <h4>Elige día y horario</h4>
+                </div>
+                <div class="col-sm-3"></div>
+                
+            </div>
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <form>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Nombre y apellido</label>
+                                        <input type="text" class="form-control" id="nombreyapellido" aria-describedby="emailHelp">
+                                        
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">e-mail</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">                                            
+
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Telefono</label>
+                                    <input class="form-control" type="number" placeholder="011-24483237" aria-label="default input example">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Fecha</label>
+                                    <input class="form-control" type="date" placeholder="18/10/2023" aria-label="default input example">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Horario</label>
+                                    <input class="form-control" type="time" placeholder="15:00:00" aria-label="default input example">
+                                </div>                            
+                                
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                       
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-center">Ⓒ 2023. Quiquiafabrica. Reservados todos los derechos</p>
+          </div>
+        </div>
+      </footer>
+</body>

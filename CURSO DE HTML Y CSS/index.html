@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiquia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="estilos.css" rel="stylesheet">
+    <style>
+      
+           .contenedor {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                background-color: rgb(243, 240, 240);
+            }
+    
+            .logo {
+                height: 100px;
+            }
+    
+            .contenedor h1 {
+                font-size: 40px;
+                margin: 0;
+                color: black;
+    
+            }
+    
+            .boton {
+                display: block;
+                padding: 20px;
+                background-color: black;
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+                padding: 10px;
+                    background-color: black;
+                    border-radius: 20px;
+            }
+    
+            @media (max-width: 480px) {
+                .contenedor {
+                    display: block;
+                    text-align: center;
+                }
+    
+                .contenedor .logo {
+                    height: 120px;
+                }
+    
+                .contenedor h1 {
+                    font-size: 30px;
+                }
+    
+                .boton {
+                    padding: 10px;
+                    background-color: black;
+                    color: #fff;
+                    font-size: 16px;
+                    text-decoration: none;
+                    border-radius: 20px;
+                    width: 100px;
+                    margin: auto;
+                }
+            }
+        
+    </style>
+  </head>
+  <body>
+            <header data-bs-theme="dark">
+                  <nav class="navbar navbar-expand-md navbar-light navbar-transparent  fixed-top bg-dark">
+                      <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img class="Quiquia" src="QUIQUIA.png"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon" style="
+                                  --bs-navbar-toggler-icon-bg: url(
+                                  &quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 029' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e&quot;);
+                            "></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                              <li class="nav-item">
+                                  <a id="home-link" class="nav-link" aria-current="page" href="catalogo.html">Catálogo</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="reservas.html" >Reserva</a>
+                              </li>
+                            </ul>
+                        </div>
+                      </div>
+                  </nav>
+                </header>
+                <main>
+                  <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <div class="dimg2"></div>
+                            <img src="barra.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block quiquia2">
+                              <img class="Quiquiaa" src="QUIQUIA.png">
+                              <h5>Disfruta de unas buenas birras.</h5>
+                              <p>Siempre con buenas vibras.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Second slide label</h5>
+                              <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="dimg1"></div>
+                            <img src="..." class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Third slide label</h5>
+                              <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev-home d-none" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next-home d-none" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <div class="container d-flex justify-content-center mb-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item d-none d-sm-block" width="727" height="90" src="Banner.html" scrolling="no" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item d-sm-none" width="300" height="250" src="Banner.html" scrolling="no" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                      
+                    </div>
+                      <div class="container">
+                        <div class="row">
+                              <div class="col-4 col-4-home">
+                                    <div class="card imgcard">
+                                          <img src="birrarubia.jpg" class="card-img-top mx-auto d-block" alt="...">
+                                          <div class="subtitle sub1">
+                                            <div class="accordion accordion-flush" id="accordion1">
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed text-center text-ligth" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    GOLDEN.
+                                                  </button>
+                                                </h2>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                  <div class="accordion-body">
+                                                    <h6 class="text-center">CERVEZA ARTESANAL</h6>                                              
+                                                    <p class="fw-bold tipo text-center">AMARGOR, SABOR, AROMA</p>
+                                                    <div class="row">
+                                                      <div class="col-6">
+                                                        <div class="row">
+                                                          <div class="col-3">
+                                                            <img src="lupulo.png" class="card-img-top mx-auto d-block lup3" alt="...">
+                                                          </div>
+                                                          <div class="col-3">
+                                                            <img src="lupulo.png" class="card-img-top mx-auto d-block lup3" alt="...">
+                                                          </div>
+                                                          <div class="col-3">
+                                                            <img src="lupulo.png" class="card-img-top mx-auto d-block lup3" alt="...">
+                                                          </div>
+                                                          <div class="col-3">
+                                                            
+                                                          </div>                                                   
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-6">
+                                                        <h1 class="graduacion">6.5%</h1>
+                                                      </div>                                                
+                                                    </div>
+                                                    <div class="row">
+                                                      <div class="col-6">
+                                                        <p class="text-center">MODERADO</p>
+                                                      </div>
+                                                      <div class="col-6">
+                                                        <p class="text-center">ALCOHOL</p>
+                                                      </div>
+                                                    </div>
+                                                    <div class="row">
+                                                      <i class="bi bi-plus-circle text-center"></i>
+                                                    </div>                                              
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>                                      
+                                          </div>                                        
+                                    </div>
+                              </div>
+                              <div class="col-4 col-4-home">
+                                    <div class="card imgcard">
+                                      <img src="birraroja.jpg" class="card-img-top mx-auto d-block" alt="...">
+                                      <div class="subtitle sub2">
+                                        <div class="accordion accordion-flush" id="accordion2">
+                                          <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                              <button class="accordion-button collapsed text-center text-ligth" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsetwo" aria-expanded="false" aria-controls="flush-collapsetwo">
+                                                IRISH RED.
+                                              </button>
+                                            </h2>
+                                            <div id="flush-collapsetwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                              <div class="accordion-body">
+                                                <h6 class="text-center">CERVEZA ARTESANAL</h6>                                              
+                                                <p class="fw-bold tipo text-center">SUAVE</p>
+                                                <div class="row">
+                                                  <div class="col-6">
+                                                    <div class="row">
+                                                      <div class="col-3">
+                                                        <img src="lupulo.png" class="card-img-top mx-auto d-block lup3" alt="...">
+                                                      </div>
+                                                      <div class="col-3">
+                                                        <img src="lupulo.png" class="card-img-top mx-auto d-block lup3" alt="...">
+                                                      </div>
+                                                      <div class="col-3">
+                                                        
+                                                      </div>
+                                                      <div class="col-3">
+                                                        
+                                                      </div>                                                   
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-6">
+                                                    <h1 class="graduacion dos-a">5%</h1>
+                                                  </div>                                                
+                                                </div>
+                                                <div class="row">
+                                                  <div class="col-6">
+                                                    <p class="text-center">BAJO</p>
+                                                  </div>
+                                                  <div class="col-6">
+                                                    <p class="text-center">ALCOHOL</p>
+                                                  </div>
+                                                </div>
+                                                <div class="row">
+                                                  <i class="bi bi-plus-circle text-center"></i>
+                                                </div>                                              
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>                                      
+                                      </div>
+                                    </div>
+                              </div>
+                              <div class="col-4 col-4-home">
+                                <div class="card imgcard" >
+                                  <div class="img-container">
+                                    <img src="birranegra.jpg" class="card-img-top mx-auto d-block" alt="...">
+                                    <div class="subtitle sub3">
+                                      <div class="accordion accordion-flush" id="accordion3">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-center text-ligth" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsetree" aria-expanded="false" aria-controls="flush-collapsetree">
+                                              STOUT.
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapsetree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                              <h6 class="text-center">CERVEZA ARTESANAL</h6>                                              
+                                              <p class="fw-bold tipo text-center">AMARGOR</p>
+                                              <div class="row">
+                                                <div class="col-6">
+                                                  <div class="row">
+                                                    <div class="col-3">
+                                                      <img src="lupulo.png" class="card-img-top mx-auto d-block lup3" alt="...">
+                                                    </div>
+                                                    <div class="col-3">
+                                                      <img src="lupulo.png" class="card-img-top mx-auto d-block lup3" alt="...">
+                                                    </div>
+                                                    <div class="col-3">
+                                                      <img src="lupulo.png" class="card-img-top mx-auto d-block lup3" alt="...">
+                                                    </div>
+                                                    <div class="col-3">
+                                                      <img src="lupulo.png" class="card-img-top mx-auto d-block lup3" alt="...">
+                                                    </div>                                                   
+                                                  </div>
+                                                </div>
+                                                <div class="col-6">
+                                                  <h1 class="graduacion">7.5%</h1>
+                                                </div>                                                
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-6">
+                                                  <p class="text-center">MEDIO ALTO</p>
+                                                </div>
+                                                <div class="col-6">
+                                                  <p class="text-center">ALCOHOL</p>
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <i class="bi bi-plus-circle text-center"></i>
+                                              </div>                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>                                      
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                     
+                </main>
+                <footer class="footer">
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="text-center">Ⓒ 2023. Quiquiafabrica. Reservados todos los derechos</p>
+                    </div>
+                  </div>
+                </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+      function activarAcordeon(accordionId) {
+          const accordionDiv = document.getElementById(accordionId);
+          const accordionButton = accordionDiv.querySelector('.accordion-button');
+      
+          accordionDiv.addEventListener('mouseenter', function() {
+            accordionButton.click();
+          });
+      
+          accordionDiv.addEventListener('mouseleave', function() {
+            accordionButton.click();
+          });
+        }
+        activarAcordeon('accordion1');
+        activarAcordeon('accordion2');
+        activarAcordeon('accordion3');  
+    </script>
+    
+  </body>
+</html>
