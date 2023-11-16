@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="img_bg_img">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="estilos.css" rel="stylesheet">
   </head>
-<body>
+<body class="img_bg">
     <header data-bs-theme="dark">
             <nav class="navbar navbar-expand-md navbar-light navbar-transparent  fixed-top bg-dark">
                 <div class="container-fluid">
@@ -37,62 +37,59 @@
             </nav>
     </header>
     <div class="mt-5"></div>        
-    <main class="mt-6">
+    <main class="mt-6 img_bg">
         <div class="container-fluid">
             <div class="row mt-5 mb-5">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6">
-                    <h2>Día y horario</h2>
-                <h4>Elige día y horario</h4>
+                    <h2 class="text-light">Día y horario</h2>
+                <h4 class="text-light">Elige día y horario</h4>
                 </div>
                 <div class="col-sm-3"></div>
                 
             </div>
             <div class="row">
             </div>
-            <div class="row">
+            <div class="row mt-5">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6">
-                    <form>
+                    <form action="reservar.html">
                         <div class="row">
                             <div class="col-4">
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Nombre y apellido</label>
-                                        <input type="text" class="form-control" id="nombreyapellido" aria-describedby="emailHelp">
+                                    <label for="exampleInputEmail1" class="form-label text-light">Nombre y apellido</label>
+                                        <input type="text" class="form-control" id="campo" aria-describedby="emailHelp" required>
                                         
                                     </div>
                                     <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">e-mail</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">                                            
+                                        <label for="exampleInputEmail1" class="form-label text-light">e-mail</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>                                            
 
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Telefono</label>
-                                    <input class="form-control" type="number" placeholder="011-24483237" aria-label="default input example">
+                                    <label for="exampleFormControlTextarea1" class="form-label text-light">Telefono</label>
+                                    <input class="form-control" type="number" placeholder="011-24483237" aria-label="default input example" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Fecha</label>
-                                    <input class="form-control" type="date" placeholder="18/10/2023" aria-label="default input example">
+                                    <label for="exampleFormControlTextarea1" class="form-label text-light">Fecha</label>
+                                    <input class="form-control" type="date" placeholder="18/10/2023" aria-label="default input example" required>
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Horario</label>
-                                    <input class="form-control" type="time" placeholder="15:00:00" aria-label="default input example">
+                                    <label for="exampleFormControlTextarea1" class="form-label text-light">Horario</label>
+                                    <input class="form-control" type="time" placeholder="15:00:00" aria-label="default input example" required>
                                 </div>                            
                                 
                                 <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                                    <label for="exampleFormControlTextarea1" class="form-label text-light">Comentarios</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
                             </div>
                         </div>
-                        
-                        
-                       
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-outline-warning btn-lg" onclick="iraurl()">Enviar</button>
                     </form>
                 </div>
                 <div class="col-sm-3"></div>
@@ -106,4 +103,20 @@
           </div>
         </div>
       </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script>
+    function validarFormulario() {
+    var valorCampo = document.getElementById('campo').value;
+
+    // Verificar si el campo está vacío
+    if (valorCampo.trim() === '') {
+        alert('Por favor, ingrese algo antes de continuar.');
+    } else {
+        // Redirigir solo si el campo tiene contenido
+        window.location.href = 'reservar.html';
+    }
+}
+
+</script>
 </body>
+<html>

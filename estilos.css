@@ -228,31 +228,40 @@ a.link-light.link-offset-2.link-underline-opacity-25.link-underline-opacity-100-
 
 .transp {background: #0006;}
 img.img-nos {
-    border-radius: 50%;
-    width: 85%;
-    height: 55%;
+    border-radius: 50%;    
     margin-top: 4rem;
 }
 img.img-nos1 {
     border-radius: 50%;
-    width: 80%;
+    width: 100%;
 }
 h1.text-center.titlle1 {
     font-size: 3.5rem;
     font-family: 'Lato';
     font-weight: bold;
 }
-.img-bg {
-    background-image: URL(Lucescalidas.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .dimg3 {
     width: 100%;
     height: 120%;
     position: absolute;
     display: inline-block;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, #000000 100%);
+}
+
+html.img_bg_img {
+    background: none !important;
+    background-image: url(quiquia2.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+body.img_bg {
+    background: transparent !important;
+}
+
+main.mt-6.img_bg {
+    background: transparent !important;
 }
 /*Media*/
 @media (max-width: 767px) {
